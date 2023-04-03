@@ -1,2 +1,2 @@
-# gof-design-patterns-with-c--major
+# GOF design patterns
 learning oop design patterns
