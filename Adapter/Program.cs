@@ -1,0 +1,30 @@
+﻿using AdapterNS;
+
+Target target = new Adapter();
+target.Request();
+
+namespace AdapterNS
+{
+    public abstract class Target
+    {
+        public abstract void Request();
+    }
+
+    public class Adapter: Target
+    {
+        private Adaptee _adaptee = new Adaptee();
+
+        public override void Request()
+        {
+            _adaptee.SpecificRequst();
+        }
+    }
+
+    internal class Adaptee
+    {
+        public void SpecificRequst()
+        {
+            Console.WriteLine("Specific Request");
+        }
+    }
+}
