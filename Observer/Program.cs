@@ -1,4 +1,5 @@
-﻿using pull = ObserverPull;
+﻿using Observer;
+using pull = ObserverPull;
 using push = ObserverPush;
 
 // pull model
@@ -30,6 +31,10 @@ subject2.State = "from subject 2";
 subject2.Notify();
 Console.WriteLine(observer3);
 Console.WriteLine(observer4);
+
+Console.WriteLine(new string('=', 10));
+Example.Run();
+
 
 namespace ObserverPull
 {

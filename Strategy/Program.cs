@@ -1,4 +1,5 @@
-﻿using StrategyNS;
+﻿using Strategy;
+using StrategyNS;
 
 Context context;
 
@@ -7,6 +8,9 @@ context.ContextInterface();
 
 context = new Context(new ConcreteStrategyB());
 context.ContextInterface();
+
+Console.WriteLine(new string('=', 10));
+Example.Run();
 
 namespace StrategyNS
 {

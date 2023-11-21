@@ -6,6 +6,9 @@ client1.Run();
 var client2 = new Client(new Factory2());
 client2.Run();
 
+Console.WriteLine(new string('=', 10));
+Example.Run();
+
 namespace Abstract_Factory
 {
     public class Client

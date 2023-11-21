@@ -1,7 +1,11 @@
-﻿using FactoryMethod;
+﻿using Factory_Method;
+using FactoryMethod;
 
 Creator creator = new ConcreteCreator();
 Product product = creator.FactoryMethod();
+
+Console.WriteLine(new string('=', 10));
+Example.Run();
 
 namespace FactoryMethod
 {
