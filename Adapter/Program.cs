@@ -3,6 +3,9 @@
 Target target = new Adapter();
 target.Request();
 
+Console.WriteLine(new string('=', 10));
+Example.Run();
+
 namespace AdapterNS
 {
     public abstract class Target

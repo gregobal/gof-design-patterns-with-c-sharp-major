@@ -10,6 +10,9 @@ decoratorA.Operation();
 decoratorB.Component = component;
 decoratorB.Operation();
 
+Console.WriteLine(new string('=', 10));
+Example.Run();
+
 namespace DecoratorNS
 {
     public abstract class Component
